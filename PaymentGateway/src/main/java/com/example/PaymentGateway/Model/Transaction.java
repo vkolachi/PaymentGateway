@@ -25,6 +25,9 @@ public class Transaction {
     @Enumerated(EnumType.STRING)
     TransactionStatus transactionStatus;
 
+
+
+
     @ManyToOne
     @JoinColumn
     User user;

@@ -21,13 +21,13 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
-   String UserId;
+   String userid;
 
    String Name;
 
    String Email;
 
-    @GeneratedValue(strategy = GenerationType.UUID)
+
    String  AccountNumber;
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
